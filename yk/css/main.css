@@ -1,0 +1,47 @@
+/*main.css*/
+*{-webkit-text-size-adjust:none;}
+/*모바일 웹킷 브라우저는 뷰포트가 변할 때 텍스트 크기를 자동으로 조절한다. 텍스트 크기 조절 금지할때 사용. */
+body{color:#000;font-size:14px;font-family:Segoe UI,"돋움",Dotum;}
+a{color:#fff;text-decoration:none;}
+a:visited{color:#333;}
+a:hover,a:active{color:#333;text-decoration:none;}
+
+/* layout */
+#wrap{position:relative;width:100%;height:100%;margin:0 auto;}
+header{position:fixed;width: 100%;
+left: 0;
+top: 0;
+z-index: 100;background:#513736;color:#fff;font-weight:bold;padding:10px;}
+.content{background:#fff;}
+footer{width:100%;position:fixed;bottom:0;left:0;background:#f7f7f7;padding:10px;border-top:1px solid #c1c1c1;}
+
+/* header */
+/*상태바1*/
+header ul:nth-child(1){display:inline-flex;flex:row;}
+header ul:nth-child(1) li{margin-right:5px;}
+header ul:nth-child(2){position:absolute;right:30px;top:10px;display:inline-flex;flex:row}
+header ul:nth-child(2) li{margin-right:5px;}
+header p{position:absolute;left:50%;top:10px;transform:translateX(-50%);}
+/*상태바2*/
+header ul:nth-child(4){display:flex;font-size:18px;font-weight:normal;}
+header ul:nth-child(4){display:flex;justify-content:space-around;}
+header ul:nth-child(4) li:nth-child(2) span{color:yellow;font-weight:bold;}
+
+/* content */
+/*검색창*/
+.content{position:relative;font-size:16px;padding-top:70px;}
+.content ul{width:90%;margin:0 auto;margin-top:10px;margin-bottom:13px;}
+.content ul li input{width:100%;background:#f1f2f4;border-radius:5px;border:0;padding:5px;text-align:center;}
+.content ul li input text{}
+
+.content p{padding:10px;color:#b8b3b9;border-top:1px solid #eee;border-bottom:1px solid #eee;}
+.content dl{display:flex;align-items:center;}
+.content dl dt{padding:10px 10px 0 10px;width:50px;}
+.content dl dd:nth-child(3){position:absolute;right:0;font-size:13px;color:#909c9c;background:#f2f2f0;border-radius:5px;padding:5px;}
+.content dl dt img{border-radius:50%;}
+
+/* footer */
+
+footer ul{display:flex;justify-content:space-around;font-size:25px;color:#c1c1c3;}
+footer ul:nth-child(2){font-size:13px;}
+footer ul li:nth-child(1){color:#4d3a2c;}
