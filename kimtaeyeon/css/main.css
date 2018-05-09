@@ -1,0 +1,29 @@
+@import url(reset.css);
+/* main.css */
+
+body{position:relative;font-size:14px;}
+a{color:#513736;text-decoration:none;}
+
+header{position:relative;height:40px;background:#513736;}
+header h1{position:absolute;left:50%;top:50%;color:#fff;font-size:16px;transform:translate(-50%,-50%);}
+header p a{position:absolute;left:20px;top:50%;color:#ada09a;font-size:16px;transform:translateY(-50%);}
+
+
+#container nav{background:#eee;width:100%;}
+#container nav ul{display:flex;flex-direction:row;}
+#container nav ul li{flex:1 0 0;height:82px;cursor:pointer;}
+#container nav ul li a{display:block;font-size:20px;height:30px;text-align:center;margin-top:20px;}
+#container nav ul li span{display:block;font-size:11px;text-align:center;margin-top:6px;}
+
+#container p.text{color:#c0c4c5;padding:5px 0 5px 10px;}
+#container div.textBox{position:relative;height:56px;color:#c0c4c5;
+						border-top:1px solid #eee;border-bottom:1px solid #eee;}
+#container div.textBox p{text-align:center;font-size:16px;margin-top:15px;}
+
+footer{position:absolute;left:0;bottom:0;width:100%;background:#eee;}
+footer ul.footInner{display:flex;flex-direction:row;}
+footer ul.footInner li{flex:1 0 0;height:55px;cursor:pointer;}
+footer ul.footInner li a{display:block;font-size:20px;height:30px;text-align:center;margin-top:5px;color:#c2c2c2;}
+footer ul.footInner li span{display:block;font-size:11px;text-align:center;color:#c2c2c2;}
+
+footer ul.footInner li:nth-of-type(3) a,footer ul.footInner li:nth-of-type(3) span{color:#513736;}
